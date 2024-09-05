@@ -440,7 +440,7 @@ wrapper = g.use_wrapper()
 print(wrapper.get_def("HELLO")) 
 
 # prints
-# RuleDef(
+# TerminalDef(
 #     "Hello"
 # )
 
@@ -462,7 +462,7 @@ wrapper.replace("HELLO", "World")
 print(wrapper.get_def("HELLO")) 
 
 # prints
-# RuleDef(
+# TerminalDef(
 #     "World"
 # )
 
@@ -484,8 +484,8 @@ wrapper.edit("HELLO", priority=10)
 print(wrapper.get_def("HELLO")) 
 
 # prints
-# RuleDef(
-#     "World"
+# TerminalDef(
+#     'Hello'
 # )
 
 ``` 
@@ -506,7 +506,7 @@ wrapper.extend("HELLO", "World")
 print(wrapper.get_def("HELLO")) 
 
 # prints
-# RuleDef(
+# TerminalDef(
 #     Option(
 #         "Hello"
 #         "World"
